@@ -9,10 +9,10 @@ A fun (and slightly evil 😈) C++ number guessing game where you try to guess a
 This is not a normal guessing game.
 
 The number is **not fixed at the start**.
-Instead, the game dynamically adjusts the possible range based on your guesses…
+Instead, the game dynamically adjusts the possible range based on your guesses.
 
-👉 So you're always **close**
-👉 But never actually right 😌
+👉 You keep getting closer
+👉 But you never actually win 😌
 
 ---
 
@@ -20,8 +20,8 @@ Instead, the game dynamically adjusts the possible range based on your guesses�
 
 * 🔁 Adaptive range logic (no fixed number)
 * 🧠 Smart decision-making system
-* 🎲 Randomized responses (avoids predictable patterns)
-* 😹 "Almost won" psychological ending
+* 🎲 Randomized responses (no predictable pattern)
+* 😹 “Almost won” psychological ending
 * 💥 Crash-safe implementation
 
 ---
@@ -31,28 +31,34 @@ Instead, the game dynamically adjusts the possible range based on your guesses�
 ### 🔧 Compile
 
 ```bash
-g++ game.cpp -o game
+g++ CloseButNope.cpp -o CloseButNope
 ```
 
 ### ▶️ Run
 
 ```bash
-./game
+./CloseButNope
 ```
 
 ---
 
-## 🕹️ How It Works
+## 🕹️ Example Output
 
-* You get **6 attempts** to guess the number
-* After each guess:
+```
+🎯 Guess the number between 1 and 100
+You have 6 attempts!
 
-  * The game responds with **"Too high"** or **"Too low"**
-* Internally, it **reshapes the valid range** instead of using a fixed number
-* At the end:
+Attempt 1: 50
+Too low!
+Attempt 2: 75
+Too high!
+Attempt 3: 60
+Too low!
+...
 
-  * It reveals a number that **fits all previous responses**
-  * Usually the one that makes you feel *painfully close* 😈
+💀 You lost!
+The number was: 82
+```
 
 ---
 
@@ -66,27 +72,39 @@ g++ game.cpp -o game
 
 ---
 
-## 😈 Why this project?
-
-This project explores how:
-
-* Logic can influence outcomes
-* Systems can appear fair while being adaptive
-* Small design changes affect user experience
-
-Also… it’s just fun to mess with people 😅
-
----
-
 ## 📂 Project Structure
 
 ```
 CloseButNope/
-│── game.cpp
+│── CloseButNope.cpp
 │── README.md
 │── LICENSE
 │── .gitignore
 ```
+
+---
+
+## ⚠️ Note
+
+Compiled files like:
+
+```
+CloseBotNope
+```
+
+are ignored using `.gitignore` and should not be pushed to GitHub.
+
+---
+
+## 😈 Why this project?
+
+This project explores how:
+
+* Systems can adapt dynamically
+* Logic can influence outcomes
+* Users can feel “almost successful”
+
+Also… it’s just fun to mess with people 😅
 
 ---
 
@@ -104,10 +122,13 @@ Just don’t blame the author if your friends stop trusting you 😉
 
 ---
 
-## ⭐ If You Like This
+## ⭐ Support
 
-Give it a ⭐ on GitHub and try it on your friends.
+If you like this project:
 
-Let’s see how many people say:
+⭐ Star the repo
+😈 Try it on your friends
+
+And enjoy their reaction:
 
 > “BRO I WAS SO CLOSE 😭”
